@@ -1,0 +1,20 @@
+.principal {
+    display: block;
+    width: 100vw;
+    text-align: center;
+    &__profile--picture {
+        display: block;
+        margin: 0 auto;
+    }
+    &__titulo {
+        font-size: 1.6rem;
+        color: #6B6B6B;
+    }
+    &__paragrafo {
+        display: block;
+        margin: 0 auto;
+        text-align: left;
+        color: #6B6B6B;
+        width: 70vw;
+    }
+}
