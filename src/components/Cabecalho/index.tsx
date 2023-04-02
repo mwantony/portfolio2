@@ -2,30 +2,45 @@ import { ReactComponent as MenuIcon } from "../../assets/svg/menu-icon.svg";
 import styles from "./Cabecalho.module.scss";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
+import efeito1 from "assets/img/efeito1.png";
+import efeito2 from "assets/img/efeito2.png";
 interface Props {
-  aparecer: boolean
-  setAparecer: React.Dispatch<React.SetStateAction<boolean>>
-  selecionado:number
-  setSelecionado:  React.Dispatch<React.SetStateAction<number>>
+  aparecer: boolean;
+  setAparecer: React.Dispatch<React.SetStateAction<boolean>>;
+  selecionado: number;
+  setSelecionado: React.Dispatch<React.SetStateAction<number>>;
 }
-export function Cabecalho({ aparecer, setAparecer, selecionado, setSelecionado }: Props) {
+export function Cabecalho({
+  aparecer,
+  setAparecer,
+  selecionado,
+  setSelecionado,
+}: Props) {
   const menu = [
     {
       titulo: "Início",
-      to: '/'
+      to: "/",
     },
     {
       titulo: "Prjetos",
-      to: 'projetos'
+      to: "projetos",
     },
     {
       titulo: "Sobre",
-      to: 'sobre'
+      to: "sobre",
     },
   ];
 
   return (
     <>
+      <img src={efeito1} alt="" className={classNames({
+        [styles.efeito]: true,
+        [styles['efeito1']]: true
+      })}/>
+      <img src={efeito2} alt="" className={classNames({
+        [styles.efeito]: true,
+        [styles['efeito2']]: true
+      })}/>
       <header className={styles.cabecalho}>
         <MenuIcon
           onClick={() => {
@@ -40,18 +55,28 @@ export function Cabecalho({ aparecer, setAparecer, selecionado, setSelecionado }
             [styles["nav"]]: true,
           })}
         >
-
-
           <div className={styles.mydiv}></div>
           <ul className={styles.lista}>
             {menu.map((item, index) => {
-              return <Link to={item.to} onClick={() => {
-                setSelecionado(index)
-                setAparecer(false)
-            }}><li className={classNames({
-                [styles['lista__link']]: true,
-                [styles['lista__link--selecionado']]: selecionado === index ? true : false,
-              })}>{item.titulo}</li></Link>
+              return (
+                <Link
+                  to={item.to}
+                  onClick={() => {
+                    setSelecionado(index);
+                    setAparecer(false);
+                  }}
+                >
+                  <li
+                    className={classNames({
+                      [styles["lista__link"]]: true,
+                      [styles["lista__link--selecionado"]]:
+                        selecionado === index ? true : false,
+                    })}
+                  >
+                    {item.titulo}
+                  </li>
+                </Link>
+              );
             })}
           </ul>
         </nav>

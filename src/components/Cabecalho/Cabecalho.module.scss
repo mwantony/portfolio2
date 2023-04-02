@@ -1,4 +1,36 @@
 @import '../../styles/variables.scss';
+.efeito {
+    position: absolute;
+    display: none;
+    width: 80%;
+    z-index: -2;
+}
+.efeito2 {
+    bottom: -10%;
+    left: -35%;
+    animation: efe2 10s alternate infinite ease-in-out;
+}
+.efeito1 {
+    top: -10%;
+    right: -40%;
+    animation: efe1 10s alternate infinite ease-in-out;
+}
+@keyframes efe1 {
+    from {
+        transform: translateY(0);
+    } 
+    to {
+        transform: translateY(10%);
+    }
+}
+@keyframes efe2 {
+    from {
+        transform: translateY(0);
+    } 
+    to {
+        transform: translateY(-10%);
+    }
+}
 
 .cabecalho {
     display: flex;

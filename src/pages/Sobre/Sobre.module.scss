@@ -31,9 +31,8 @@
     transition: 400ms ease-in-out;
     &:hover {
         cursor: pointer;
-        animation: none;
+        animation: ping 300ms alternate infinite;
     }
-    animation: ping 1s alternate infinite;
 }
 
 p > a {
