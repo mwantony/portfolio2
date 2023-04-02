@@ -6,6 +6,56 @@
     margin: 0;
     &__menuicon {
         width: 3rem;
+
     }
 }
+.mydiv {
+    width: 30vw;
+}
+.nav {
+    color: #e4e4e4;
+    position: absolute;
+    visibility: hidden;
+    transition: 500ms ease-in-out;
+    transform: scale(0);
+    left: -80vw;
+    width: 150vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    height: 150vw;
+    top: -70vw;
+    line-height: 3rem;
+    z-index: 5;
+    background-color: #1e1e1e;
+    border-radius: 50%;
+}
 
+.nav--aparecer {
+    transform: scale(1);
+    visibility: visible;
+}
+
+.lista {
+    position: relative;
+    width: 50vw;
+}
+
+
+.div {
+    position: absolute;
+    width: 100vw;
+    transition: 400ms ease-in-out;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    visibility: hidden;
+}
+
+.div--aparecer {
+    visibility: visible;
+    opacity: 1;
+}

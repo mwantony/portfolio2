@@ -4,18 +4,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Cabecalho } from './components/Cabecalho';
 
 export default function AppRouter() {
-    const [tema, setTema] = useState('')
-    useEffect(() => {
-        if(localStorage.getItem('tema') === '' || localStorage.getItem('tema') === "claro") {
-            localStorage.setItem('tema', 'claro')
-            setTema('claro')
-        } else {
-            setTema('escuro')
-        }
-    })
+    const [aparecer, setAparecer] = useState(false)
     return (
         <BrowserRouter>
-            <Cabecalho></Cabecalho>
+            <Cabecalho aparecer={aparecer} setAparecer={setAparecer}></Cabecalho>
             <main>
                 <Routes>
                     <Route path='/' element={<Inicio></Inicio>}></Route>
