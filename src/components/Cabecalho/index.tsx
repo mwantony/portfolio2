@@ -45,7 +45,10 @@ export function Cabecalho({ aparecer, setAparecer, selecionado, setSelecionado }
           <div className={styles.mydiv}></div>
           <ul className={styles.lista}>
             {menu.map((item, index) => {
-              return <Link to={item.to} onClick={() => setSelecionado(index)}><li className={classNames({
+              return <Link to={item.to} onClick={() => {
+                setSelecionado(index)
+                setAparecer(false)
+            }}><li className={classNames({
                 [styles['lista__link']]: true,
                 [styles['lista__link--selecionado']]: selecionado === index ? true : false,
               })}>{item.titulo}</li></Link>
