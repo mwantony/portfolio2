@@ -9,6 +9,7 @@
         color: $fonteCor;
 
     }
+
 }
 
 .informacoes {
@@ -18,11 +19,35 @@
     &__titulo {
         font-size: 1.3rem;
     }
+    &__imagem {
+        filter: drop-shadow(4px 4px 50px rgba(0, 0, 0, 0.35));
+    }
 }
 
 .whatsapp {
     position: absolute;
     bottom: 0;
     right: 0;
-    z-index: -1;
+    transition: 300ms ease-in-out;
+    &:hover {
+        cursor: pointer;
+        animation: ping 300ms alternate infinite ease-in-out;
+    }
+}
+
+p > a {
+    color: $fonteCor;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@keyframes ping {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-20%);
+    }
 }

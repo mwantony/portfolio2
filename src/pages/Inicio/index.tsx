@@ -43,7 +43,7 @@ export default function Inicio() {
             <div className={styles.scope}>
 							<li className={styles["lista.item"]}>
 								<Linkedin className={styles["lista__imagem"]}></Linkedin>
-								<a href="https://www.linkedin.com/in/antony-maziero-warken-b88306231/">
+								<a href="https://www.linkedin.com/in/antony-maziero-warken-b88306231/" target='_blank'>
 									<p>Antony Maziero Warken</p>
 								</a>
 							</li>
@@ -51,7 +51,7 @@ export default function Inicio() {
             <div className={styles.scope}>
 							<li className={styles["lista.item"]}>
 							<Github className={styles["lista__imagem"]}></Github>
-								<a href="https://github.com/mwantony">
+								<a href="https://github.com/mwantony" target='_blank'>
 									<p>mwantony</p>
 								</a>
 							</li>
