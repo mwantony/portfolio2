@@ -8,9 +8,6 @@ export default function AppRouter() {
     const [aparecer, setAparecer] = useState(false)
     const [selecionado, setSelecionado] = useState(0)
 
-    useEffect(() => {
-
-    })
     return (
         <BrowserRouter>
             <Cabecalho aparecer={aparecer} setAparecer={setAparecer} selecionado={selecionado} setSelecionado={setSelecionado}></Cabecalho>

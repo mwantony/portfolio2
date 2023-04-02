@@ -3,52 +3,52 @@
         "titulo": "Controlador financeiro",
         "label": "TypeScript",
         "link": "https://github.com/mwantony/feira_de_ciencias",
-        "imagem": "assets/img/controlador.png"
+        "imagem": "../../assets/img/controlador.png"
     },
     {
         "titulo": "NestJS",
         "label": "TypeScript",
         "link": "https://github.com/mwantony/nestjs",
-        "imagem": ""
+        "imagem": "../../assets/img/nestjs.png"
     },
     {
         "titulo": "RestAPI",
         "label": "JavaScript",
         "link": "https://github.com/mwantony/rest-api",
-        "imagem": ""
+        "imagem": "../../assets/img/restapi.png"
     },
     {
         "titulo": "ORM Sequelize",
         "label": "JavaScript",
         "link": "https://github.com/mwantony/orm-sequelize2",
-        "imagem": ""
+        "imagem": "../../assets/img/ormsequelize.png"
     },
     {
         "titulo": "PHP Web App",
         "label": "PHP",
         "link": "https://github.com/mwantony/phpfirstwebapp",
-        "imagem": ""
+        "imagem": "../../assets/img/phpwebapp.png"
     },
     {
         "titulo": "GraphQL",
         "label": "TypeScript",
         "link": "https://github.com/mwantony/graphql-com-prisma",
-        "imagem": ""
+        "imagem": "../../assets/img/graphqlcomprisma.png"
     },
     {
         "titulo": "Casa Verde",
         "label": "HTML - CSS",
         "link": "https://github.com/mwantony/casaverde",
-        "imagem": ""
+        "imagem": "../../assets/img/casaverde.png"
     },    {
         "titulo": "Portfolio",
         "label": "TypeScript",
         "link": "https://github.com/mwantony/portfolio",
-        "imagem": ""
+        "imagem": "../../assets/img/portfolio.png"
     },    {
         "titulo": "MongoDB",
         "label": "JavaScript",
         "link": "https://github.com/mwantony/node-com-mongodb",
-        "imagem": ""
+        "imagem": "../../assets/img/mongodb.png"
     }
 ]
