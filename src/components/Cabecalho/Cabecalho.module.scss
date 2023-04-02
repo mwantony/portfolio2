@@ -1,10 +1,11 @@
-header {
+.cabecalho {
     display: flex;
     justify-content: space-between;
-    padding: .5rem;
-    height: 2rem;
+    padding: .6rem 0 0 0.6rem;
+    height: 3rem;
+    margin: 0;
+    &__menuicon {
+        width: 3rem;
+    }
 }
 
-.rodape {
-    background-image: url('../../assets/svg/background.svg');
-}

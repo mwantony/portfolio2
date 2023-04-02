@@ -1,0 +1,65 @@
+.cop {
+    height: calc(110vh);
+}
+
+.principal {
+    display: block;
+    width: 100vw;
+    text-align: center;
+    &__profile--picture {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    &__titulo {
+        font-size: 1.6rem;
+        color: #2E2E2E;
+    }
+    &__paragrafo {
+        display: block;
+        margin: 0 auto;
+        text-align: left;
+        color: #2E2E2E;
+        width: 70vw;
+    }
+
+}
+
+.lista {
+    list-style: none;
+    width: 60vw;
+    align-items: flex-start;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    &__imagem {
+        width: 3rem;
+    }
+}
+
+.scope {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+p {
+    margin: 0;
+}
+li {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: #2E2E2E;
+    text-decoration: none;
+}
+
+.rodape {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+}

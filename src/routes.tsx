@@ -1,4 +1,4 @@
-import Inicio from 'pages/Início';
+import Inicio from 'pages/Inicio';
 import {useEffect, useState} from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Cabecalho } from './components/Cabecalho';

@@ -5,8 +5,7 @@ export function Cabecalho() {
     return (
         <>
             <header className={styles.cabecalho}>
-                <MenuIcon></MenuIcon>
-                <DarkTheme></DarkTheme>
+                <MenuIcon className={styles["cabecalho__menuicon"]}></MenuIcon>
             </header>
         </>
     )
