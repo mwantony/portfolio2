@@ -31,6 +31,7 @@ export default function Sobre() {
             <a href="https://wa.me/5549991042777">
                 <WhatsApp className={styles.whatsapp}></WhatsApp>
             </a>
+
         </>
     )
 }
