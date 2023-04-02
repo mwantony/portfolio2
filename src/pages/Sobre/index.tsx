@@ -1,0 +1,34 @@
+import styles from './Sobre.module.scss'
+import profile2 from 'assets/img/profiles-picture2.png'
+import {ReactComponent as WhatsApp} from 'assets/svg/whatsapp2.svg'
+export default function Sobre() {
+    return(
+        <>
+            <section className={styles.sobre}>
+                <div>
+                    <h1 className={styles['sobre__titulo']}>Antony Maziero Warken</h1>
+                    <p className={styles['sobre__paragrafo']}>Front end Júnior</p>
+                </div>
+                <img src={profile2} alt="Imagem de perfil" />
+            </section>
+            <section className={styles.informacoes}>
+                <h2 className={styles['informacoes__titulo']}>Escolaridade:</h2>
+                <p className={styles['informacoes__paragrafo']}>Ensino Médio - cursando</p>
+                <h2 className={styles['informacoes__titulo']}>Idiomas</h2>
+                <p className={styles['informacoes__paragrafo']}>Inglês fluente (certificados)</p>
+                <h2 className={styles['informacoes__titulo']}>Tecnologias</h2>
+                <ul className={styles.lista}>
+                    <li className={styles['lista__item']}>ReactJS</li>
+                    <li className={styles['lista__item']}>TypeScript</li>
+                    <li className={styles['lista__item']}>Nodejs</li>
+                    <li className={styles['lista__item']}>JavaScript</li>
+                    <li className={styles['lista__item']}>HTML - CSS</li>
+                    <li className={styles['lista__item']}>MySQL</li>
+                    <li className={styles['lista__item']}>MongoDB</li>
+                </ul>
+                <p className={styles['informacoes__paragrafo']}>Cursos certificados</p>
+            </section>
+            <WhatsApp className={styles.whatsapp}></WhatsApp>
+        </>
+    )
+}

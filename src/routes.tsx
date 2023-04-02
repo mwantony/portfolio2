@@ -1,4 +1,5 @@
 import Inicio from 'pages/Inicio';
+import Sobre from 'pages/Sobre';
 import {useEffect, useState} from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Cabecalho } from './components/Cabecalho';
@@ -12,6 +13,7 @@ export default function AppRouter() {
             <main>
                 <Routes>
                     <Route path='/' element={<Inicio></Inicio>}></Route>
+                    <Route path='/sobre' element={<Sobre></Sobre>}></Route>
                 </Routes>
             </main>
         </BrowserRouter>
