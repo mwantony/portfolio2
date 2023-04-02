@@ -68,3 +68,18 @@ a {
     width: 100vw;
     height: 200px;
 }
+
+@media (min-width: $tablet) {
+    .principal {
+        &__profile--picture {
+            width: 50%;
+        }
+    }
+}
+@media (min-width: $laptop) {
+    .principal {
+        &__profile--picture {
+            width: 40%;
+        }
+    }
+}

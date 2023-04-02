@@ -22,7 +22,7 @@ export function Cabecalho({
       to: "/",
     },
     {
-      titulo: "Prjetos",
+      titulo: "Projetos",
       to: "projetos",
     },
     {
