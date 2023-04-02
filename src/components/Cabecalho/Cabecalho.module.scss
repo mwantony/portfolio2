@@ -11,6 +11,7 @@
 }
 .mydiv {
     width: 30vw;
+    height: 50vw;
 }
 .nav {
     color: #e4e4e4;
@@ -40,13 +41,31 @@
 .lista {
     position: relative;
     width: 50vw;
+    font-size: 1.5rem;
+    &__link--selecionado {
+        border-left: #e4e4e4 solid 4px;
+    }
+}
+
+li {
+    transition: 200ms ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+a {
+    color: #e4e4e4;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 
 .div {
     position: absolute;
     width: 100vw;
-    transition: 400ms ease-in-out;
+    transition: 200ms ease-in-out;
     height: 100vh;
     top: 0;
     left: 0;
@@ -58,4 +77,10 @@
 .div--aparecer {
     visibility: visible;
     opacity: 1;
+}
+
+.close {
+    position: absolute;
+    margin-top: 2rem;
+    width: 40px;
 }
