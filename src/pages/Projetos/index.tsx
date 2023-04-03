@@ -29,7 +29,7 @@ export default function Projetos() {
           </ul>
         );
       })}
-      <a href="https://github.com/mwantony?tab=repositories" target='_blank' rel='noreferrer'><button className={styles['projetos__botao']}>Ver todos</button></a>
+      <a href="https://github.com/mwantony?tab=repositories" target='_blank' rel='noreferrer' className={styles.aqui}><button className={styles['projetos__botao']}>Ver todos</button></a>
     </>
   );
 }
