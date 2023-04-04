@@ -88,6 +88,14 @@ export function Cabecalho({
           [styles["div"]]: true,
         })}
       ></div>
+            <img src={efeito1} alt="Efeito1" className={classNames({
+        [styles['efeito']]: true,
+        [styles['efeito1']]: true
+      })}/>
+      <img src={efeito2} alt="Efeito2" className={classNames({
+        [styles['efeito']]: true,
+        [styles['efeito2']]: true
+      })}/>
     </>
   );
 }

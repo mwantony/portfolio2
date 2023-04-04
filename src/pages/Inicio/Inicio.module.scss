@@ -4,6 +4,7 @@
     height: calc(110vh);
 }
 
+
 .principal {
     display: block;
     width: 100vw;
@@ -83,3 +84,28 @@ a {
         }
     }
 }
+
+@media (min-width: $desktop) {
+    .principal {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        width: 100%;
+        &__paragrafo {
+            display: flex;
+            flex-direction: column;
+            width: 40vw;
+            padding: 1rem;
+            max-width: 400px;
+        }
+        &__profile--picture {
+            max-width: 400px;
+        }
+        .div__salva {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+

@@ -4,7 +4,8 @@ import classNames from "classnames";
 import {ReactComponent as WhatsApp} from 'assets/svg/whatsapp.svg'
 import {ReactComponent as Linkedin} from 'assets/svg/linkedin.svg'
 import {ReactComponent as Github} from 'assets/svg/github.svg'
-
+import efeito1 from 'assets/img/efeito1.png'
+import efeito2 from 'assets/img/efeito2.png'
 interface Props {
   tema: string;
   setTema: React.Dispatch<React.SetStateAction<string>>;
@@ -22,12 +23,16 @@ export default function Inicio() {
             src={Profile}
             alt="Imagem de perfil"
           />
-          <h1 className={styles["principal__titulo"]}>Antony Maziero Warken</h1>
-          <div className={styles["principal__paragrafo"]}>
-            <p>
-              Crio produtos frontend estáveis e escaláveis com boa experiência
-              usuária
-            </p>
+          <div className={styles['div__salva']}>
+            <div>
+              <h1 className={styles["principal__titulo"]}>Antony Maziero Warken</h1>
+            </div>
+            <div className={styles["principal__paragrafo"]}>
+              <p>
+                Crio produtos frontend estáveis e escaláveis com boa experiência
+                usuária
+              </p>
+            </div>
           </div>
         </section>
         <section className={styles.rodape}>
@@ -59,6 +64,7 @@ export default function Inicio() {
           </ul>
         </section>
       </section>
+
     </>
   );
 }
