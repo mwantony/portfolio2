@@ -66,3 +66,11 @@
         width: 100%;
     }
 }
+
+@media (min-width: $desktop) {
+    .lista {
+        &__item {
+            max-width:500px ;
+        }
+    }
+}

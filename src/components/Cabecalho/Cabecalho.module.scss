@@ -16,13 +16,17 @@
     .efeito2 {
         bottom: -20%;
         z-index: -1;
-        animation: levitation2 5s alternate infinite ease-in-out;
+        animation: levitation2 3s alternate infinite ease-in-out;
     }
     .efeito1 {
         top: -10%;
         right: -5%;
         z-index: -1;
-        animation: levitation1 5s alternate infinite ease-in-out;
+        animation: levitation1 3s alternate infinite ease-in-out;
+    }
+
+    .div__salva {
+        width: 80%;
     }
 
     @keyframes levitation1 {
@@ -30,7 +34,7 @@
             transform: translateY(0);
         }
         to {
-            transform: translateY(-5%);
+            transform: translateY(-3%);
         }
     }
     @keyframes levitation2 {
@@ -38,7 +42,7 @@
             transform: translateY(0);
         }
         to {
-            transform: translateY(5%);
+            transform: translateY(3%);
         }
     }
 }
@@ -149,7 +153,7 @@
 li {
     transition: 300ms ease-in-out;
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
         text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.363) ;
     }
 }

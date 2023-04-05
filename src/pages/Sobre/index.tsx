@@ -5,7 +5,7 @@ export default function Sobre() {
     return(
         <>
             <section className={styles.sobre}>
-                <div>
+                <div className={styles['sobre__div']}>
                     <h1 className={styles['sobre__titulo']}>Antony Maziero Warken</h1>
                     <p className={styles['sobre__paragrafo']}>Front end Júnior</p>
                 </div>

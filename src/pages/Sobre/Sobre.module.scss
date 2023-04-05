@@ -63,3 +63,36 @@ p > a {
         transform: translateY(-3vh);
     }
 }
+
+@media (min-width: $desktop) {
+    .sobre {
+        width: 60vw;
+        margin-top: 5rem;
+        margin-right: 5rem;
+        &__div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__titulo {
+            font-size: 2rem;
+        }
+        &__paragrafo {
+            font-size: 1.2rem;
+        }
+    }
+    .informacoes {
+        width: 50vw;
+        margin: 0 auto;
+        padding: 0;
+        position: absolute;
+        left: 5vw;
+        top: 7rem;
+
+        &__titulo {
+        }
+        &__imagem {
+            width: 20vw;
+        }
+    }
+}
