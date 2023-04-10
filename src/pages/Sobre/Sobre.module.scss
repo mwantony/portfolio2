@@ -1,98 +1,98 @@
-@import 'styles/variables.scss';
+@import "styles/variables.scss";
 .sobre {
-    display: flex;
-    width: 80vw;
-    margin: 0 auto;
-    justify-content: space-around;
-    &__titulo {
-        font-size: 1.5rem;
-        color: $fonteCor;
-
-    }
-
+  display: flex;
+  width: 80vw;
+  margin: 0 auto;
+  justify-content: space-around;
+  &__titulo {
+    font-size: 1.5rem;
+    color: $fonteCor;
+  }
+  &__paragrafo {
+    color: $fonteCor;
+  }
 }
 
 .informacoes {
-    padding-left: 5vw;
-    padding-top: 5vw;
-    color: $fonteCor;
-    &__titulo {
-        font-size: 1.3rem;
-    }
-    &__imagem {
-        filter: drop-shadow(4px 4px 50px rgba(0, 0, 0, 0.35));
-    }
+  padding-left: 5vw;
+  padding-top: 5vw;
+  color: $fonteCor;
+  &__titulo {
+    font-size: 1.3rem;
+  }
+  &__imagem {
+    filter: drop-shadow(4px 4px 50px rgba(0, 0, 0, 0.35));
+  }
 }
 
 .whatsapp {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    transition: 400ms ease-in-out;
-    &:hover {
-        cursor: pointer;
-        animation: ping 300ms alternate infinite;
-    }
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: 400ms ease-in-out;
+  &:hover {
+    cursor: pointer;
+    animation: ping 300ms alternate infinite;
+  }
 }
 
 p > a {
-    color: $fonteCor;
-    &:hover {
-        text-decoration: underline;
-    }
+  color: $fonteCor;
+  &:hover {
+    text-decoration: underline;
+  }
 }
-
 
 .falecomigo {
-    background-color: $fonteCor;
-    width: 30vw;
-    font-size: 1.2rem;
-    right: -50vw;
-    position: absolute;
-    padding: 1rem;
-    border-radius: 1rem;
-    color: $fonteClara;
-    animation: ping 500ms alternate forwards;
+  background-color: $fonteCor;
+  width: 30vw;
+  font-size: 1.2rem;
+  right: -50vw;
+  position: absolute;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: $fonteClara;
+  animation: ping 500ms alternate forwards;
 }
 @keyframes ping {
-    from {
-        transform: translateY(0);
-    }
+  from {
+    transform: translateY(0);
+  }
 
-    to {
-        transform: translateY(-3vh);
-    }
+  to {
+    transform: translateY(-3vh);
+  }
 }
 
 @media (min-width: $desktop) {
-    .sobre {
-        width: 60vw;
-        margin-top: 5rem;
-        margin-right: 5rem;
-        &__div {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        &__titulo {
-            font-size: 2rem;
-        }
-        &__paragrafo {
-            font-size: 1.2rem;
-        }
+  .sobre {
+    width: 60vw;
+    margin-top: 5rem;
+    margin-right: 5rem;
+    &__div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
-    .informacoes {
-        width: 50vw;
-        margin: 0 auto;
-        padding: 0;
-        position: absolute;
-        left: 5vw;
-        top: 7rem;
+    &__titulo {
+      font-size: 2rem;
+    }
+    &__paragrafo {
+      font-size: 1.2rem;
+    }
+  }
+  .informacoes {
+    width: 20vw;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    left: 5vw;
+    top: 7rem;
 
-        &__titulo {
-        }
-        &__imagem {
-            width: 20vw;
-        }
+    &__titulo {
     }
+    &__imagem {
+      width: 20vw;
+    }
+  }
 }
